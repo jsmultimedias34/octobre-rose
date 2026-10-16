@@ -1,0 +1,292 @@
+/* Style général de la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+/* En-tête Octobre Rose */
+header {
+    background-color: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Grand titre */
+header h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+/* Texte sous le titre */
+header p {
+    font-size: 20px;
+    margin-top: 15px;
+}nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #e91e63;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 25px;
+    width: 200px;
+    text-align: center;
+}
+/* Section présentation Octobre Rose */
+.presentation {
+    background-color: white;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Titre de la présentation */
+.presentation h2 {
+    color: #e91e63;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+/* Texte de la présentation */
+.presentation p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* Section Prévention */
+.prevention {
+    background-color: #ffe4ec;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.prevention h2 {
+    color: #e91e63;
+    font-size: 32px;
+    margin-top: 0;
+}
+.bouton-prevention {
+    display: inline-block;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+/* Section Événements */
+.evenements {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+}
+.carte-evenement {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 2px solid #f8bbd0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.carte-evenement h3 {
+    color: #e91e63;
+    font-size: 24px;
+}
+.bouton-participer {
+    display: inline-block;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.inscription label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.inscription input,
+.inscription textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.inscription {
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+.inscription button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.contact {
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+.contact h2 {
+    color: #e91e63;
+    font-size: 32px;
+    margin-top: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Adaptation aux téléphones */
+@media (max-width: 768px) {
+    .inscription {
+        width: 90%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 20px auto;
+    }
+}
+/* Galerie Photos Octobre Rose */
+.photos {
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.photos h2 {
+    color: #e91e63;
+    font-size: 28px;
+}
+
+.photos p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.photos img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+/* Présentation des photos */
+.photos img {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    margin: 10px 1%;
+    border-radius: 12px;
+    vertical-align: middle;
+}
+/* Affichage des photos sur téléphone */
+@media screen and (max-width: 600px) {
+    .photos img {
+        display: block;
+        width: 100%;
+        margin: 15px auto;
+    }
+}
+/* Effet de zoom sur les photos */
+.photos img {
+    transition: transform 0.3s ease;
+}
+
+.photos img:hover {
+    transform: scale(1.05);
+}
+/* Légendes des photos */
+.legende-photo {
+    color: #e91e63;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/* Galerie photos côte à côte */
+.galerie-grille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+}
+/* Galerie photos sur téléphone */
+@media screen and (max-width: 600px) {
+    .galerie-grille {
+        grid-template-columns: 1fr;
+    }
+    }/* Pied de page Octobre Rose */
+footer {
+    background-color: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+/* Bouton Retour en haut */
+.retour-haut {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.retour-haut:hover {
+    background-color: #c2185b;
+}
+/* Défilement fluide */
+html {
+    scroll-behavior: smooth;
+}
